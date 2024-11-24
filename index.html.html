@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин меблів для тварин</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <style>
+        /* Основні стилі */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: url('123.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        header {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-family: 'Mochiy Pop P One', sans-serif;
+            color: #663300;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        nav {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+        }
+        nav a {
+            color: #663300;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #8B5C42;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 20px;
+        }
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .card {
+            width: 45%;
+            margin: 10px 0;
+            text-align: center;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #663300;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        button {
+            background-color: #663300;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #8B5C42;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: center;
+            }
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Магазин меблів для тварин</h1>
+    </header>
+
+    <nav>
+        <a href="#products">Продукти</a>
+        <a href="#contact">Контакти</a>
+    </nav>
+
+    <main>
+        <section id="products">
+            <h2>Наші продукти</h2>
+            <div class="product">
+                <!-- Продукт 1 -->
+                <div class="card">
+                    <h3>Ліжко для котів</h3>
+                    <img src="12.jpg" alt="Ліжко для котів">
+                    <p>Зручне ліжко з дерев’яною основою для вашого кота. Підійде для будь-якого інтер'єру.</p>
+                </div>
+                <!-- Продукт 2 -->
+                <div class="card">
+                    <h3>Будка для собак</h3>
+                    <img src="images/dog_house.jpg" alt="Будка для собак">
+                    <p>Стильна та екологічна будка для собак. Матеріал: натуральна деревина.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Залиште нам повідомлення</h2>
+            <!-- Форма для Formspree -->
+            <form class="contact-form" action="https://formspree.io/f/xvgoqdlb" method="POST">
+                <input type="text" name="name" placeholder="Ваше ім'я" required>
+                <input type="tel" name="phone" placeholder="Ваш телефон" required>
+                <input type="email" name="email" placeholder="Ваш email" required>
+                <textarea name="message" rows="5" placeholder="Ваше повідомлення" required></textarea>
+                <button type="submit">Відправити</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Магазин меблів для тварин. Всі права захищені.</p>
+    </footer>
+
+</body>
+</html>
